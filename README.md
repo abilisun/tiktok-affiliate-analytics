@@ -32,17 +32,17 @@ Key Business Insights (SQL Queries)
 1. Top 5 Best-Selling Products (by GMV)
 Sepatu Retrograde Low Black White drove the highest GMV contribution, generating IDR 280.9M across 1,060 units sold.
 
-Sepatu Gazelle Low Black White ranked second with IDR 245.7M GMV across 1,213 units sold.
+- Sepatu Gazelle Low Black White ranked second with IDR 245.7M GMV across 1,213 units sold.
 
 2. Monthly Sales Trend (Month-over-Month Growth)
 Peak revenue occurred in June 2026, generating IDR 85.3M GMV.
 
-Window functions (LAG()) identified seasonal demand spikes and growth rebounds during mid-year promotional campaigns.
+- Window functions (LAG()) identified seasonal demand spikes and growth rebounds during mid-year promotional campaigns.
 
 3. Content Channel Performance
 LIVE Streaming is the primary revenue driver, accounting for 5,772 orders and IDR 1.75B GMV (~88% of total revenue).
 
-Showcase and Short Video content contributed IDR 201M and IDR 119M, respectively.
+- Showcase and Short Video content contributed IDR 201M and IDR 119M, respectively.
 
 4. Affiliate Partner Performance Tiering
 Using SQL quartile functions (NTILE(4)), Affiliate_-1 was categorized under Tier 1 (Top Performance) with total commission earnings of IDR 70.2M.
