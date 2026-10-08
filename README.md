@@ -27,7 +27,7 @@ FROM fact_orders f
 LEFT JOIN dim_products p ON f.sku_id = p.sku_id
 LEFT JOIN dim_content c ON f.content_id = c.content_id
 LEFT JOIN dim_commission_payout pay ON f.order_id = pay.order_id;
-
+```
 Key Business Insights (SQL Queries)
 1. Top 5 Best-Selling Products (by GMV)
 Sepatu Retrograde Low Black White drove the highest GMV contribution, generating IDR 280.9M across 1,060 units sold.
