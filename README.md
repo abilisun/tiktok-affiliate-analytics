@@ -37,3 +37,35 @@ SELECT
 FROM fact_orders f
 JOIN dim_products p ON f.sku_id = p.sku_id
 JOIN dim_content c ON f.content_id = c.content_id;
+```
+Key Business Insights
+1. Daily Sales Velocity & Campaign Spikes
+Analysis of daily order trends reveals pronounced revenue velocity aligned with campaign periods. Sales peaked on March 25 (IDR 346.7M) and March 18 (IDR 273.4M), driven by payday promotions and concentrated LIVE broadcast schedules. Non-campaign periods maintained a steady baseline average of ~IDR 50M/day (7-day moving average).
+
+2. Content Channel Revenue Share
+- LIVE Streaming Dominance: Serves as the undisputed primary revenue driver, generating 84.56% of total GMV (IDR 1.75 Billion) across 5,308 orders.
+- Asynchronous Channels: Short Videos contributed 5.75% (IDR 119.4M), Link Sharing generated 5.60% (IDR 116.1M), and Showcase accounted for 4.09% (IDR 85.0M). Separating Link Sharing from Showcase isolates distinct buyer conversion pathways.
+
+3. Anchor Product SKUs (Top 5 Best-Sellers)
+- Sales are strongly concentrated in low-top footwear models:
+- Sepatu Retrograde Low Black White: Generated the highest revenue at IDR 280.9 Million (1,060 units sold).
+- Sepatu Gazelle Low Black White: Followed closely at IDR 245.7 Million (1,213 units sold).
+- Risk Factor: Together, these top two anchor SKUs account for over 25% of total store GMV. Stockouts directly endanger LIVE stream conversion rates.
+
+4. Commission Efficiency Analysis
+- Evaluating the commission-to-GMV payout ratio highlights channel efficiency:
+- Link Sharing (5.31% Ratio): Highest incentive rate, effectively mobilizing external affiliate traffic.
+- LIVE Streaming (3.25% Ratio): Highly cost-effective payout structure relative to its massive gross sales output.
+- Short Video (3.48%) & Showcase (3.19%): Provide steady, low-overhead passive volume.
+
+Strategic Action Plan
+- Scale LIVE Broadcast Slots: Increase live stream frequency during peak evening traffic hours and payday campaign weekends.
+- Protect Hero SKU Inventory: Maintain priority safety stock reserves for Retrograde Low and Gazelle Low prior to major live broadcasts.
+- Short Video Creator Incentives: Implement tiered performance bonuses for video creators to establish a continuous passive sales baseline alongside LIVE stream spikes.
+
+Tech Stack & Methodology
+- Python (Pandas, NumPy): Data Cleaning, Datetime Parsing, Deduplication, & Star Schema Normalization.
+- PostgreSQL & DBeaver: Relational Warehouse Design, DDL Schema Definition, & Foreign Key Mapping.
+- Advanced SQL: Aggregations, CTEs, Window Functions (7-Day Moving Average), & Multi-Table Joins.
+- Tableau Public: Interactive Business Dashboarding, KPI Cards, & Visual Analytics.
+- Version Control & Docs: Git, GitHub Markdown, and ERD Visualization.
